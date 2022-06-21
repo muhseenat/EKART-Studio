@@ -1,0 +1,97 @@
+[
+    {
+        "id": "sd_g1QZCTDT9H5hZIeB",
+        "type": "tab",
+        "createdDate": "2022-06-20T10:06:01.761Z",
+        "label": "ProductService",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "resolver",
+        "generateNext": true,
+        "serviceName": "ProductService",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_WNTUQgVxFbjZ7TTQ",
+        "type": "Resolve",
+        "z": "sd_g1QZCTDT9H5hZIeB",
+        "viewType": "client",
+        "nodeType": "start",
+        "name": "resolve",
+        "outputs": 1,
+        "localVariables": [
+            {
+                "key": "products_",
+                "defaultValue": {
+                    "type": "any",
+                    "value": "[]"
+                },
+                "output": true
+            }
+        ],
+        "functionName": "resolve",
+        "category": "Navigation",
+        "x": 125,
+        "y": 80,
+        "wires": [
+            [
+                "sd_Pi3vZ9ND1djDVvKY"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "ProductService"
+    },
+    {
+        "id": "sd_Pi3vZ9ND1djDVvKY",
+        "type": "CallService",
+        "z": "sd_g1QZCTDT9H5hZIeB",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "call resolver",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_ZzX2uvmpZMRcRxku",
+            "type": "tab",
+            "createdDate": "2022-06-20T11:40:17.738Z",
+            "label": "Get_products",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_GMTOuVLP8L8USrMq",
+            "flowName": "get_products"
+        },
+        "inputVariables": [],
+        "bhVariables": [],
+        "outputMapping": [
+            {
+                "mapVarType": "localproducts_",
+                "key": "",
+                "valueType": "bh",
+                "value": "",
+                "mapVarName": ""
+            }
+        ],
+        "callService": "../sd-services/Get_products",
+        "startName": "get_products",
+        "inputParams": [],
+        "accept_bh": false,
+        "functionName": "callResolver",
+        "category": "General",
+        "x": 265,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "ProductService",
+        "generated": true
+    }
+]

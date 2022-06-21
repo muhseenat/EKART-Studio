@@ -1,0 +1,13 @@
+{
+    "displayName": "ECOM-ECOMMERCE",
+    "appName": "ecom-ecommerce",
+    "description": "Ecommerce for mobile phones",
+    "lastModified": "2022-06-20T05:42:24.569Z",
+    "imgSourcePath": "appIcon-1655703744167.svg",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2022-06-20T05:42:24.166Z",
+    "analyticsId": "fe44379a-6186-53f5-40e0-8e971f92478d",
+    "createdStudioVersion": "8.4.0-beta.0"
+}

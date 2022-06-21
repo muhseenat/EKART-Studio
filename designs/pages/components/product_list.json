@@ -1,0 +1,90 @@
+[
+    {
+        "id": "sd_u0h1bADO88cIfL6f",
+        "type": "tab",
+        "createdDate": "2022-06-20T06:12:13.816Z",
+        "label": "product_list",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "product_listComponent"
+    },
+    {
+        "id": "sd_K2Btkmnno9EEuIDH",
+        "type": "OnInit",
+        "z": "sd_u0h1bADO88cIfL6f",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [
+            {
+                "key": "title",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                }
+            },
+            {
+                "key": "products",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                }
+            }
+        ],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
+        "functionName": "sd_K2Btkmnno9EEuIDH",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_rWhJ7Udp9Gu7RJBe"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "product_listComponent"
+    },
+    {
+        "id": "sd_rWhJ7Udp9Gu7RJBe",
+        "type": "PageVariables",
+        "z": "sd_u0h1bADO88cIfL6f",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "product",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "title",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_rWhJ7Udp9Gu7RJBe",
+        "category": "Function",
+        "x": 165,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "product_listComponent",
+        "generated": true
+    }
+]

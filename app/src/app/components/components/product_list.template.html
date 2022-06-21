@@ -1,0 +1,39 @@
+<div class="title">
+  {{title}}
+</div>
+<div>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-card *ngFor="let i of products">
+      <img mat-card-image>
+
+      <mat-card-content>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <h2>
+            {{i.name}}
+          </h2>
+          <p>
+          </p>
+        </div>
+      </mat-card-content>
+
+      <mat-card-content class="star">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>shopping_cart</mat-icon>
+          </div>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

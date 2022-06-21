@@ -1,0 +1,86 @@
+{
+    "87472224-b933-c5ed-3aec-ad6ff2778d65": {
+        "paletteKey": "NEUTRINOS_VIEW_navbar",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "navbar",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            }
+        ]
+    },
+    "8cff0fcd-7e60-4195-2be4-ff6b54723d87": {
+        "paletteKey": "NEUTRINOS_VIEW_product_list",
+        "commentid": null,
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "product_list",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "dav",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[title]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_complexity": "advanced",
+                "displayAs": "title",
+                "attrType": "INPUT",
+                "inValid": false,
+                "message": ""
+            },
+            {
+                "_key": "[product]",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_complexity": "advanced",
+                "displayAs": "product",
+                "attrType": "INPUT",
+                "inValid": true,
+                "message": "Property not available"
+            },
+            {
+                "_key": "[products]",
+                "_value": "page.products_.slice(0,4)",
+                "_type": "kv",
+                "_attrDef": "c"
+            },
+            {
+                "_key": "title",
+                "_value": "BEST SELLER",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ]
+    }
+}

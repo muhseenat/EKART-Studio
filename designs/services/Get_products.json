@@ -1,0 +1,217 @@
+[
+    {
+        "id": "sd_ZzX2uvmpZMRcRxku",
+        "type": "tab",
+        "createdDate": "2022-06-20T11:40:17.738Z",
+        "label": "Get_products",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "Get_products",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_GMTOuVLP8L8USrMq",
+        "type": "Start",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "Get_products",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "products_",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "get_products",
+        "category": "General",
+        "x": 85,
+        "y": 100,
+        "wires": [
+            [
+                "sd_LDGPp8vqyaWC56Iz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Get_products"
+    },
+    {
+        "id": "sd_LDGPp8vqyaWC56Iz",
+        "type": "HttpRequest",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "getProducts",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "__csd__env__bh.system.environment.properties. GET_PRODUCTS__csd__env__end",
+        "urlMappingObj": {
+            "mapVarType": "environment",
+            "mapVarValue": " GET_PRODUCTS"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.res",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "res"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "getProducts",
+        "category": "HTTP",
+        "x": 225,
+        "y": 100,
+        "wires": [
+            [
+                "sd_U7anaLdcYVqlwwAF"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Get_products",
+        "generated": true
+    },
+    {
+        "id": "sd_Z4blZYy2LZ51VeRU",
+        "type": "Catch",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "selectedNodes": [
+            "sd_GMTOuVLP8L8USrMq",
+            "sd_LDGPp8vqyaWC56Iz"
+        ],
+        "selectCatchType": "selectednodes",
+        "masternodeList": "",
+        "ignoreList": "",
+        "functionName": "sd_Z4blZYy2LZ51VeRU",
+        "category": "General",
+        "x": 125,
+        "y": 260,
+        "wires": [
+            [
+                "sd_OXUTAmbmgjfYkkfA"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "Get_products"
+    },
+    {
+        "id": "sd_OXUTAmbmgjfYkkfA",
+        "type": "SnackBar",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "message": {
+            "type": "str",
+            "value": "error.message"
+        },
+        "action": {
+            "type": "str",
+            "value": "Close"
+        },
+        "duration": {
+            "type": "num",
+            "value": "3000"
+        },
+        "horizontalPosition": "center",
+        "horizontalPositionMap": "",
+        "verticalPosition": "bottom",
+        "verticalPositionMap": "",
+        "panelClass": {
+            "type": "str",
+            "value": ""
+        },
+        "direction": "ltr",
+        "functionName": "sd_OXUTAmbmgjfYkkfA",
+        "category": "General",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Get_products",
+        "generated": true
+    },
+    {
+        "id": "sd_OeqPwOVoicYVs4Hn",
+        "type": "Script",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('this is working 1',this.products_)",
+        "functionName": "sd_OeqPwOVoicYVs4Hn",
+        "category": "Function",
+        "x": 505,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Get_products",
+        "generated": true
+    },
+    {
+        "id": "sd_U7anaLdcYVqlwwAF",
+        "type": "ServiceVariables",
+        "z": "sd_ZzX2uvmpZMRcRxku",
+        "viewType": "client-server",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "products_",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "res.products"
+                }
+            }
+        ],
+        "functionName": "sd_U7anaLdcYVqlwwAF",
+        "category": "Function",
+        "x": 365,
+        "y": 100,
+        "wires": [
+            [
+                "sd_OeqPwOVoicYVs4Hn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "Get_products",
+        "generated": true
+    }
+]

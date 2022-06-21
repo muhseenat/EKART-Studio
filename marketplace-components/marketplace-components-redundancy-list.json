@@ -1,0 +1,327 @@
+{
+    "neutrinos-all-default-nodes-plugin": {
+        "name": "neutrinos-all-default-nodes-plugin",
+        "default": true,
+        "deps": {
+            "ndefault-all-nodes": {
+                "name": "ndefault-all-nodes",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "server": [
+                        "ChildProcess",
+                        "CORS",
+                        "DBConfig",
+                        "GlobalMiddlewareEnd",
+                        "GlobalMiddlewareStart",
+                        "GlobalNext",
+                        "HttpIn",
+                        "HttpOut",
+                        "HttpProxyConfig",
+                        "ServerHttpRequest",
+                        "MiddlewareEnd",
+                        "MiddlewareStart",
+                        "Next",
+                        "RouteMiddlewareEnd",
+                        "RouteMiddlewareStart",
+                        "ServerLog",
+                        "TLSConfig",
+                        "Processor"
+                    ],
+                    "common": [
+                        "Catch",
+                        "Comments",
+                        "Script",
+                        "Unknown"
+                    ],
+                    "pages": [
+                        "PageCallService",
+                        "PageStart",
+                        "PageSwitch",
+                        "ViewPicker",
+                        "PageVariables",
+                        "PageServiceVariables",
+                        "PageAsync"
+                    ],
+                    "client-server": [
+                        "ServiceVariables",
+                        "CallService",
+                        "Start",
+                        "Switch",
+                        "Async"
+                    ],
+                    "client-pages": [
+                        "Environment",
+                        "HttpRequest",
+                        "Log",
+                        "Navigation",
+                        "SnackBar",
+                        "Storage",
+                        "CallSSDApi",
+                        "UseDependency",
+                        "neutrinos-ngzone"
+                    ],
+                    "client": [
+                        "CanActivate",
+                        "CanDeactivate",
+                        "Resolve"
+                    ]
+                }
+            }
+        },
+        "parentDeps": {}
+    },
+    "ndefault-all-nodes": {
+        "name": "ndefault-all-nodes",
+        "packageType": "studio-nodes",
+        "deps": {},
+        "parentDeps": {
+            "neutrinos-all-default-nodes-plugin": true
+        },
+        "nodes": {
+            "server": [
+                "ChildProcess",
+                "CORS",
+                "DBConfig",
+                "GlobalMiddlewareEnd",
+                "GlobalMiddlewareStart",
+                "GlobalNext",
+                "HttpIn",
+                "HttpOut",
+                "HttpProxyConfig",
+                "ServerHttpRequest",
+                "MiddlewareEnd",
+                "MiddlewareStart",
+                "Next",
+                "RouteMiddlewareEnd",
+                "RouteMiddlewareStart",
+                "ServerLog",
+                "TLSConfig",
+                "Processor"
+            ],
+            "common": [
+                "Catch",
+                "Comments",
+                "Script",
+                "Unknown"
+            ],
+            "pages": [
+                "PageCallService",
+                "PageStart",
+                "PageSwitch",
+                "ViewPicker",
+                "PageVariables",
+                "PageServiceVariables",
+                "PageAsync"
+            ],
+            "client-server": [
+                "ServiceVariables",
+                "CallService",
+                "Start",
+                "Switch",
+                "Async"
+            ],
+            "client-pages": [
+                "Environment",
+                "HttpRequest",
+                "Log",
+                "Navigation",
+                "SnackBar",
+                "Storage",
+                "CallSSDApi",
+                "UseDependency",
+                "neutrinos-ngzone"
+            ],
+            "client": [
+                "CanActivate",
+                "CanDeactivate",
+                "Resolve"
+            ]
+        }
+    },
+    "neutrinos-internet": {
+        "name": "neutrinos-internet",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-internet": {
+                "name": "neutrinos-internet",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "client-pages": [
+                        {
+                            "name": "09116728-8c4c-739f-c7da-625634afe918",
+                            "displayName": "On Online"
+                        },
+                        {
+                            "name": "c6ef8916-35f2-a758-e8d5-8b61fdac762d",
+                            "displayName": "On Offline"
+                        },
+                        {
+                            "name": "9f050d9a-4bf7-fc9b-6e14-cf39e33ead30",
+                            "displayName": "isOnline"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-internet": "1.0.0"
+        }
+    },
+    "neutrinos-lifecycle-events": {
+        "name": "neutrinos-lifecycle-events",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-lifecycle-events": {
+                "name": "neutrinos-lifecycle-events",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "OnChanges",
+                            "displayName": "On Changes"
+                        },
+                        {
+                            "name": "OnInit",
+                            "displayName": "On Init"
+                        },
+                        {
+                            "name": "DoCheck",
+                            "displayName": "Do Check"
+                        },
+                        {
+                            "name": "AfterContentInit",
+                            "displayName": "After Content Init"
+                        },
+                        {
+                            "name": "AfterContentChecked",
+                            "displayName": "After Content Checked"
+                        },
+                        {
+                            "name": "AfterViewInit",
+                            "displayName": "After View Init"
+                        },
+                        {
+                            "name": "AfterViewChecked",
+                            "displayName": "After View Checked"
+                        },
+                        {
+                            "name": "OnDestroy",
+                            "displayName": "On Destroy"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-lifecycle-events": "1.0.0"
+        }
+    },
+    "neutrinos-dialog": {
+        "name": "neutrinos-dialog",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-dialog": {
+                "name": "neutrinos-dialog",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "OpenDialog",
+                            "displayName": "Open Dialog"
+                        },
+                        {
+                            "name": "GetDialogData",
+                            "displayName": "Get Dialog Data"
+                        },
+                        {
+                            "name": "CloseDialog",
+                            "displayName": "Close Dialog"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-dialog": "1.0.0"
+        }
+    },
+    "neutrinos-listener": {
+        "name": "neutrinos-listener",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-listener": {
+                "name": "neutrinos-listener",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "HostListener",
+                            "displayName": "Host Listener"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-listener": "1.0.0"
+        }
+    },
+    "neutrinos-output": {
+        "name": "neutrinos-output",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-output": {
+                "name": "neutrinos-output",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "Output",
+                            "displayName": "Output"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-output": "1.0.0"
+        }
+    },
+    "neutrinos-route": {
+        "name": "neutrinos-route",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-route": {
+                "name": "neutrinos-route",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "NavigationListener",
+                            "displayName": "Navigation Listener"
+                        },
+                        {
+                            "name": "NavigationData",
+                            "displayName": "Navigation Data"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-route": "1.0.0"
+        }
+    }
+}

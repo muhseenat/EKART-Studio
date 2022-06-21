@@ -1,0 +1,30 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .navbar{
+   
+    background-color: rgb(221, 148, 13);
+    color: white;
+  }
+
+.title {
+  margin: 25px 0px 5px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}  
+.star {
+  padding: 0 5px !important;
+  font-size: 20px !important;
+  color: hsl(60, 100%, 50%) !important;
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 2rem;
+}

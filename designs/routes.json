@@ -1,0 +1,22 @@
+{
+    "routes": [
+        {
+            "path": "home",
+            "component": "homeComponent",
+            "resolve": {
+                "edited": true,
+                "value": "{products_: ProductService }"
+            }
+        },
+        {
+            "path": "''",
+            "redirectTo": "/home",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

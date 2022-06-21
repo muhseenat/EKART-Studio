@@ -1,0 +1,117 @@
+[
+    {
+        "id": "sd_USdtSL8aGVgQo62M",
+        "type": "tab",
+        "createdDate": "2022-06-20T06:26:31.299Z",
+        "label": "home",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_kwKk3sOmwBCGXNMC",
+        "type": "OnInit",
+        "z": "sd_USdtSL8aGVgQo62M",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
+        "functionName": "sd_kwKk3sOmwBCGXNMC",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 40,
+        "wires": [
+            [
+                "sd_InzujZfU0pWvfuwk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_InzujZfU0pWvfuwk",
+        "type": "PageServiceVariables",
+        "z": "sd_USdtSL8aGVgQo62M",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "Get Product from service",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "get",
+        "globalVariables": [
+            {
+                "textIp": "products_",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "products_"
+                }
+            }
+        ],
+        "functionName": "getProductFromService",
+        "service": {
+            "id": "sd_ZzX2uvmpZMRcRxku",
+            "type": "tab",
+            "createdDate": "2022-06-20T11:40:17.738Z",
+            "label": "Get_products",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client",
+            "generateNext": true,
+            "serviceName": "Get_products",
+            "relativeParentPath": "",
+            "_def": {
+                "defaults": {
+                    "label": {
+                        "value": ""
+                    },
+                    "disabled": {
+                        "value": false
+                    },
+                    "info": {
+                        "value": ""
+                    }
+                }
+            }
+        },
+        "serviceImportPath": "app/sd-services/Get_products",
+        "category": "Function",
+        "x": 225,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Fnd7jMjfUEhY4Xla"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Fnd7jMjfUEhY4Xla",
+        "type": "Script",
+        "z": "sd_USdtSL8aGVgQo62M",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('oninnit of home',page.products_)",
+        "functionName": "sd_Fnd7jMjfUEhY4Xla",
+        "category": "Function",
+        "x": 365,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    }
+]
